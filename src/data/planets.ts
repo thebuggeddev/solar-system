@@ -103,27 +103,26 @@ export const SCENE_PLANETS = [...PLANETS].reverse();
 
 export const PLANET_SPACING = 400;
 
-const CDN_BASE =
-  'https://cdn.jsdelivr.net/gh/jeromeetienne/threex.planets@master/images/';
+const TEXTURES = '/textures/';
 
 export const TEXTURE_URLS: Record<string, string> = {
-  mercury: CDN_BASE + 'mercurymap.jpg',
-  venus: CDN_BASE + 'venusmap.jpg',
-  earth: CDN_BASE + 'earthmap1k.jpg',
-  mars: CDN_BASE + 'marsmap1k.jpg',
-  jupiter: CDN_BASE + 'jupitermap.jpg',
-  saturn: CDN_BASE + 'saturnmap.jpg',
-  uranus: CDN_BASE + 'uranusmap.jpg',
-  neptune: CDN_BASE + 'neptunemap.jpg',
-  pluto: CDN_BASE + 'plutomap1k.jpg',
+  mercury: TEXTURES + 'mercurymap.jpg',
+  venus: TEXTURES + 'venusmap.jpg',
+  earth: TEXTURES + 'earthmap1k.jpg',
+  mars: TEXTURES + 'marsmap1k.jpg',
+  jupiter: TEXTURES + 'jupitermap.jpg',
+  saturn: TEXTURES + 'saturnmap.jpg',
+  uranus: TEXTURES + 'uranusmap.jpg',
+  neptune: TEXTURES + 'neptunemap.jpg',
+  pluto: TEXTURES + 'plutomap1k.jpg',
 };
 
 export const BUMP_URLS: Record<string, string> = {
-  mercury: CDN_BASE + 'mercurybump.jpg',
-  venus: CDN_BASE + 'venusbump.jpg',
-  earth: CDN_BASE + 'earthbump1k.jpg',
-  mars: CDN_BASE + 'marsbump1k.jpg',
-  pluto: CDN_BASE + 'plutobump1k.jpg',
+  mercury: TEXTURES + 'mercurybump.jpg',
+  venus: TEXTURES + 'venusbump.jpg',
+  earth: TEXTURES + 'earthbump1k.jpg',
+  mars: TEXTURES + 'marsbump1k.jpg',
+  pluto: TEXTURES + 'plutobump1k.jpg',
 };
 
 /** Convert a UI-level planet index to the scene-level index. */
